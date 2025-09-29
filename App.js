@@ -3,7 +3,6 @@ import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-
 import WelcomeScreen from './app/assets/screens/WelcomeScreen';
 import CameraMode from './app/assets/screens/CameraMode';
 import ScreenShotPreview from './app/assets/screens/ScreenShotPreview';
