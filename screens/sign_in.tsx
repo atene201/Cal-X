@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { StyleSheet, Text, View, TouchableOpacity, Animated } from 'react-native';
 
-export default function WelcomeScreen({navigation}) {
+export default function Sign_In({navigation}) {
 
   const colorAnim = useRef(new Animated.Value(0)).current;
 
@@ -32,8 +32,8 @@ export default function WelcomeScreen({navigation}) {
         <Text style={styles.heading1}>Cal X</Text>
         <View>
           <TouchableOpacity style={styles.button}
-            onPress={() => navigation.navigate("CameraMode")}>
-            <Text>Get Started</Text>
+            onPress={() => navigation.navigate("camera")}>
+            <Text style={styles.buttonText}>START</Text>
           </TouchableOpacity>
         </View>
       </Animated.View>
@@ -62,8 +62,13 @@ export default function WelcomeScreen({navigation}) {
       alignItems: 'center',
       justifyContent: 'center',
       top: 0,
-      borderRadius: 40,
+      borderRadius: 20,
       height: 50,
       width: 100,
+    },
+    buttonText: {
+      fontWeight: 'bold',
+      fontSize: 20,
+      color: 'black',
     },
   });
